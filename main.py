@@ -17,12 +17,6 @@ class MyWidget(QMainWindow):
     def run(self):
         self.update()
 
-    def xs(self, x):
-        return x + 200 // 2
-
-    def ys(self, y):
-        return 200 // 2 - y
-
     def paintEvent(self, event):
         qp = QPainter()
         qp.begin(self)
